@@ -249,7 +249,7 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig'
 ] 
 --------------------------------------------------------------------------------------------
-If you open "apps.py" file inside "base" app folder. You will find that classname as "baseConfig". Here we are referencing that only.
+If you open "apps.py" file inside "base" app folder. You will find that classname as "BaseConfig". Here we are referencing that only.
 ########################################################################################################################################################################
 
 
@@ -291,10 +291,10 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Home page");
+    return HttpResponse("Home page")
 
 def room(request):
-    return HttpResponse("Room page");
+    return HttpResponse("Room page")
 --------------------------------------------------------------------------------------------
 Now create a "urls.py" file insdie base app as well. Remember we have discussed that every app can also have their own "urls.py" file and we need to create that manually. We discussed it in section - "How to create an app inside a django project". Now write the following code in "base -> urls.py" file :
 --------------------------------------------------------------------------------------------
