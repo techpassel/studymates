@@ -168,8 +168,6 @@ Note that when you create an app for the project that app gets created outside o
 
 
 
-
-
 How to start a django project :-
 ========================================================================================================================================================================
 After you create a django project you can run the project as follows :
@@ -179,8 +177,6 @@ cd django_project
 python3 manage.py runserver
 ***************************************************
 ########################################################################################################################################################################
-
-
 
 
 
@@ -329,7 +325,6 @@ http://localhost:8000/room/
 
 
 
-
 Working with templates in Django :-
 ========================================================================================================================================================================
 Templates is nothing but html files. In above examples we just return "strings" as hhtp response but that is not how a web application works. Generally we render a HTML file on any specified URL. So to achieve that we need templates. We can use templates in django as follows :
@@ -390,7 +385,6 @@ iii.) We have not discussed about 'Template inheritence' so far. We have discuss
 
 
 
-
 Template inheritence in django :-
 ========================================================================================================================================================================
 In any web application we generally share same content at several places. Like in most web applications generally we have same navbar, sidebar, footer in all the pages and only the main content area changes in all pages. So creating same design in all pages will make our task cumbersome and repeatative. Won't it be good if we create it once and reuse it everywhere. We can achieve that as follows : 
@@ -440,8 +434,6 @@ Now let's modify "home.html" to reference "main.html" from it. Now our "home.htm
 {% endblock %}
 -------------------------------------------------------------------------------------------- 
 ########################################################################################################################################################################
-
-
 
 
 

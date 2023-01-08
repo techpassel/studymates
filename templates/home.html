@@ -3,5 +3,9 @@
 {% block content %}
 
 <h1 style="color: red">This is home page</h1>
-
+<div>
+    {% for room in rooms %}
+    <h3>{{room.id}} -- <a href="/room/{{room.id}}">{{room.name}}</a></h3>
+    {% endfor %}
+</div>
 {% endblock %}
