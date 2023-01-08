@@ -5,7 +5,11 @@
 <h1 style="color: red">This is home page</h1>
 <div>
     {% for room in rooms %}
-    <h3>{{room.id}} -- <a href="/room/{{room.id}}">{{room.name}}</a></h3>
+    <!-- <h3>{{room.id}} -- <a href="/room/{{room.id}}">{{room.name}}</a></h3> -->
+    <!-- Above syntax will also work but that is not recommended. Instead use below syntax. -->
+    <h3>{{room.id}} -- <a href="{% url 'room' room.id %}">{{room.name}}</a></h3>
+    <!-- Here 'room' we have used as the 'desired URL' and 'room.id' as the parameters we passing with URL, 
+        What we use as 'desired URL' should be same as the 'name' parameter of the URL and not as the 'path' parameter of the URL. -->
     {% endfor %}
 </div>
 {% endblock %}
